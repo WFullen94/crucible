@@ -2,7 +2,7 @@
 
 Self-evolving agent skill optimizer — learns compact, auditable skill documents through adversarial feedback, bounded edits, and a strict validation gate. Stress-tests the core assumptions of the SkillOpt paradigm.
 
-**GitHub:** `github.com/wfullen/crucible`
+**GitHub:** `github.com/WFullen94/crucible`
 **Thesis:** Agent skills encoded as text can be optimized without touching model weights. But the optimization loop makes three implicit assumptions nobody has tested: that the validation distribution stays honest, that the task distribution stays stable, and that the learned rules aren't exploitable. crucible builds the loop, then breaks each assumption deliberately.
 
 **Deliverables:** Research blog series (3 posts) + arXiv preprint targeting NeurIPS/ICLR agents track.
