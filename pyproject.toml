@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crucible"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.25",
+    "datasets>=2.19",
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "matplotlib>=3.8",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+comparison = ["dspy-ai>=2.4"]
+dev = ["pytest>=8", "pytest-cov"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["crucible*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
